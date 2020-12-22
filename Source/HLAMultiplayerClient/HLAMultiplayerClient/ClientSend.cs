@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace HLAMultiplayerClient
+{
+    class ClientSend
+    {
+        private static void SendTCPData (Packet _packet)
+        {
+            _packet.WriteLength();
+            Client.tcp.SendData(_packet);
+        }
+
+        private static void SendUDPData(Packet _packet)
+        {
+            _packet.WriteLength();
+            Client.udp.SendData(_packet);
+        }
+
+        #region Packets
+        public static void WelcomeReceived ()
+        {
+            using (Packet _packet = new Packet((int)ClientPackets.welcomeReceived))
+            {
+                _packet.Write(Client.myId);
+                _packet.Write("Player");
+
+                SendTCPData(_packet);
+            }
+        }
+        #endregion
+    }
+}

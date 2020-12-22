@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLAServer", "HLAServer\HLAServer.csproj", "{B9637922-A070-4679-A8FD-14EDC73C71EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9637922-A070-4679-A8FD-14EDC73C71EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9637922-A070-4679-A8FD-14EDC73C71EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9637922-A070-4679-A8FD-14EDC73C71EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9637922-A070-4679-A8FD-14EDC73C71EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B4FD576-C3B1-45C9-B43D-DF2567C8EF1A}
+	EndGlobalSection
+EndGlobal

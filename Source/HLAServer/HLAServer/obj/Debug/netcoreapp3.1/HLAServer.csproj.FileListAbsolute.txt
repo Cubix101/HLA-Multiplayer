@@ -1,0 +1,13 @@
+C:\Users\Peter\source\repos\HLAServer\HLAServer\bin\Debug\netcoreapp3.1\HLAServer.exe
+C:\Users\Peter\source\repos\HLAServer\HLAServer\bin\Debug\netcoreapp3.1\HLAServer.deps.json
+C:\Users\Peter\source\repos\HLAServer\HLAServer\bin\Debug\netcoreapp3.1\HLAServer.runtimeconfig.json
+C:\Users\Peter\source\repos\HLAServer\HLAServer\bin\Debug\netcoreapp3.1\HLAServer.runtimeconfig.dev.json
+C:\Users\Peter\source\repos\HLAServer\HLAServer\bin\Debug\netcoreapp3.1\HLAServer.dll
+C:\Users\Peter\source\repos\HLAServer\HLAServer\bin\Debug\netcoreapp3.1\HLAServer.pdb
+C:\Users\Peter\source\repos\HLAServer\HLAServer\obj\Debug\netcoreapp3.1\HLAServer.csprojAssemblyReference.cache
+C:\Users\Peter\source\repos\HLAServer\HLAServer\obj\Debug\netcoreapp3.1\HLAServer.AssemblyInfoInputs.cache
+C:\Users\Peter\source\repos\HLAServer\HLAServer\obj\Debug\netcoreapp3.1\HLAServer.AssemblyInfo.cs
+C:\Users\Peter\source\repos\HLAServer\HLAServer\obj\Debug\netcoreapp3.1\HLAServer.dll
+C:\Users\Peter\source\repos\HLAServer\HLAServer\obj\Debug\netcoreapp3.1\HLAServer.pdb
+C:\Users\Peter\source\repos\HLAServer\HLAServer\obj\Debug\netcoreapp3.1\HLAServer.genruntimeconfig.cache
+C:\Users\Peter\source\repos\HLAServer\HLAServer\obj\Debug\netcoreapp3.1\HLAServer.csproj.CoreCompileInputs.cache
