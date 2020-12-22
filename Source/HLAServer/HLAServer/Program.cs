@@ -6,9 +6,11 @@ namespace HLAServer
     class Program
     {
         private static bool isRunning = false;
+
         static void Main(string[] args)
         {
             Console.Title = "Half-Life: Alyx Server";
+
             int playerCount = 16;
 
             try

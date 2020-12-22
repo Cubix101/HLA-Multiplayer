@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Numerics;
 
 namespace HLAServer
 {
@@ -18,6 +19,14 @@ namespace HLAServer
             }
 
             Server.clients[_fromClient].SendIntoGame(_username);
+        }
+
+        public static void PlayerMovement (int _fromClient, Packet _packet)
+        {
+            Vector3 _pos = _packet.ReadVector3();
+            Vector3 _angles = _packet.ReadVector3();
+
+            Server.clients[_fromClient].player.Move(_pos, _angles);
         }
     }
 }

@@ -9,14 +9,28 @@ namespace HLAMultiplayerClient
     {
         private static bool isRunning = false;
         public static string appPath;
+        public static string tempPath;
+        public static string hlaPath = "";
 
         static void Main(string[] args)
         {
             Console.Title = "HLA Multiplayer Client";
             appPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            Console.WriteLine($"App is located at {appPath}");
+            tempPath = Path.Combine(appPath, "temp-client");
+            Console.WriteLine($"App is located at {appPath}, utilising temp-path {tempPath}");
+
+            bool validInput = false;
+
+            while (!validInput)
+            {
+                Console.Write("Please enter your hlvr folder path (not Half-Life: Alyx, hlvr, for example E:/Steam/steamapps/common/Half-Life Alyx/game/hlvr): ");
+                hlaPath = Console.ReadLine();
+                validInput = Directory.Exists(hlaPath);
+            }
 
             isRunning = true;
+
+            new GameManager().Awake();
 
             Thread mainThread = new Thread(new ThreadStart(MainThread));
             mainThread.Start();
@@ -25,7 +39,6 @@ namespace HLAMultiplayerClient
             Console.WriteLine("Press any key to connect to server.");
 
             Client.instance.ConnectToServer();
-            new GameManager().Awake();
         }
 
         private static void MainThread()
@@ -37,7 +50,7 @@ namespace HLAMultiplayerClient
             {
                 while (_nextLoop < DateTime.Now)
                 {
-                    GameLogic.Update();
+                    Update();
 
                     _nextLoop = _nextLoop.AddMilliseconds(Constants.MS_PER_TICK);
 
@@ -47,6 +60,12 @@ namespace HLAMultiplayerClient
                     }
                 }
             }
+        }
+
+        public static void Update ()
+        {
+            GameLogic.Update();
+            GameManager.instance.Update();
         }
     }
 }

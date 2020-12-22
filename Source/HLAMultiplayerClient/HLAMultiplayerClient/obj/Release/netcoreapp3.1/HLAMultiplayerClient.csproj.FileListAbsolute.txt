@@ -1,0 +1,13 @@
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\bin\Release\netcoreapp3.1\HLAMultiplayerClient.exe
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\bin\Release\netcoreapp3.1\HLAMultiplayerClient.deps.json
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\bin\Release\netcoreapp3.1\HLAMultiplayerClient.runtimeconfig.json
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\bin\Release\netcoreapp3.1\HLAMultiplayerClient.runtimeconfig.dev.json
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\bin\Release\netcoreapp3.1\HLAMultiplayerClient.dll
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\bin\Release\netcoreapp3.1\HLAMultiplayerClient.pdb
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\obj\Release\netcoreapp3.1\HLAMultiplayerClient.csprojAssemblyReference.cache
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\obj\Release\netcoreapp3.1\HLAMultiplayerClient.AssemblyInfoInputs.cache
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\obj\Release\netcoreapp3.1\HLAMultiplayerClient.AssemblyInfo.cs
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\obj\Release\netcoreapp3.1\HLAMultiplayerClient.csproj.CoreCompileInputs.cache
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\obj\Release\netcoreapp3.1\HLAMultiplayerClient.dll
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\obj\Release\netcoreapp3.1\HLAMultiplayerClient.pdb
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAMultiplayerClient\HLAMultiplayerClient\obj\Release\netcoreapp3.1\HLAMultiplayerClient.genruntimeconfig.cache

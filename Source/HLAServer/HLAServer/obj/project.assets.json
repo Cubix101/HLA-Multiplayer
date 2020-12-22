@@ -74,11 +74,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Peter\\source\\repos\\HLAServer\\HLAServer\\HLAServer.csproj",
+      "projectUniqueName": "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAServer\\HLAServer\\HLAServer.csproj",
       "projectName": "HLAServer",
-      "projectPath": "C:\\Users\\Peter\\source\\repos\\HLAServer\\HLAServer\\HLAServer.csproj",
+      "projectPath": "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAServer\\HLAServer\\HLAServer.csproj",
       "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Peter\\source\\repos\\HLAServer\\HLAServer\\obj\\",
+      "outputPath": "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAServer\\HLAServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

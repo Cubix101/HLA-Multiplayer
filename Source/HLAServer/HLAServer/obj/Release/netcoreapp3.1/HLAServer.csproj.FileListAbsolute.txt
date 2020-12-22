@@ -1,0 +1,13 @@
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\bin\Release\netcoreapp3.1\HLAServer.exe
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\bin\Release\netcoreapp3.1\HLAServer.deps.json
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\bin\Release\netcoreapp3.1\HLAServer.runtimeconfig.json
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\bin\Release\netcoreapp3.1\HLAServer.runtimeconfig.dev.json
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\bin\Release\netcoreapp3.1\HLAServer.dll
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\bin\Release\netcoreapp3.1\HLAServer.pdb
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\obj\Release\netcoreapp3.1\HLAServer.csprojAssemblyReference.cache
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\obj\Release\netcoreapp3.1\HLAServer.AssemblyInfoInputs.cache
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\obj\Release\netcoreapp3.1\HLAServer.AssemblyInfo.cs
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\obj\Release\netcoreapp3.1\HLAServer.csproj.CoreCompileInputs.cache
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\obj\Release\netcoreapp3.1\HLAServer.dll
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\obj\Release\netcoreapp3.1\HLAServer.pdb
+C:\Users\Peter\Documents\Half-Life Alyx Multiplayer\Source\HLAServer\HLAServer\obj\Release\netcoreapp3.1\HLAServer.genruntimeconfig.cache

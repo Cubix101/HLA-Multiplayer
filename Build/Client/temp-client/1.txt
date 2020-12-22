@@ -1,0 +1,7 @@
+"Player"
+{
+	"Position"	"<309.58926, -229.08755, 64.03125>"
+	"Angles"	"<0, 0, 0>"
+	"Username"	"Player"
+	"IsLocal"	"True"
+}

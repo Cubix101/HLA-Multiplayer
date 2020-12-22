@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6JP6qOy/42hMm6/q3k0+8PBpxJNuPZLvGARSaMWOxFkUamGzp2CiaNU9/9ByqeowOA1nspb+wDh/YmwCRLxKTA==",
+  "dgSpecHash": "CbGx3PqafFjFB00ZzsBBfaG6KcWOSYqNRzXEDH7WpBteS8lHLtHLNVjRkueqrOL0nDliM4WKLQHRTkMLpktUeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Peter\\source\\repos\\HLAServer\\HLAServer\\HLAServer.csproj",
+  "projectFilePath": "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAServer\\HLAServer\\HLAServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Peter\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
   ],

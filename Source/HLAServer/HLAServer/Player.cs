@@ -20,5 +20,13 @@ namespace HLAServer
             position = Vector3.Zero;
             angles = Vector3.Zero;
         }
+
+        public void Move (Vector3 _pos, Vector3 _angles)
+        {
+            position = _pos;
+            angles = _angles;
+
+            Console.WriteLine(_pos.ToString());
+        }
     }
 }

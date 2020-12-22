@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Numerics;
 
 namespace HLAMultiplayerClient
 {
@@ -27,6 +28,17 @@ namespace HLAMultiplayerClient
                 _packet.Write("Player");
 
                 SendTCPData(_packet);
+            }
+        }
+
+        public static void PlayerMovement (Vector3 position, Vector3 angles)
+        {
+            using (Packet _packet = new Packet((int)ClientPackets.playerMovement))
+            {
+                _packet.Write(position);
+                _packet.Write(angles);
+
+                SendUDPData(_packet);
             }
         }
         #endregion

@@ -1,0 +1,4 @@
+"game"
+{
+	"playerCount"	"1"
+}
