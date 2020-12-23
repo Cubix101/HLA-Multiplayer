@@ -12,6 +12,7 @@ end
 function Start ()
     offScreenPos = EntityGroup[1]:GetOrigin()
     localPlayer = Entities:GetLocalPlayer()
+    --1. what is this 2. this references a file specifically on your computer so this will only work for people named Peter with this folder in their documents
     file = LoadKeyValues("C:/Users/Peter/Documents/Half-Life Alyx Multiplayer/Build/Client/temp-client/GameInfo.txt")
     -- this gives you an id (unique to your player)
     for i=1, file["playerCount"] do
