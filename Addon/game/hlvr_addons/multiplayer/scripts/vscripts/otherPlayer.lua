@@ -11,5 +11,6 @@ end
 
 function onSpawn()
     --set the username, for now all players will just be you. this is only for testing
-    print(getStr(name)
+    --print(getStr(name))
+    print("ass")
 end
