@@ -6,3 +6,10 @@ function UpdateLocation(x,y,z)
 end
 
 function getID(p_id)
+    print("fuck you")
+end
+
+function onSpawn()
+    --set the username, for now all players will just be you. this is only for testing
+    print(getStr(name)
+end

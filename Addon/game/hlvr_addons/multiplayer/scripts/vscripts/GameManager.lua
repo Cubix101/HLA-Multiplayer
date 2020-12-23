@@ -9,7 +9,7 @@ function SpawnPlayer(p_id)
 end
 
 end
-function Start ()
+function Start()
     offScreenPos = EntityGroup[1]:GetOrigin()
     localPlayer = Entities:GetLocalPlayer()
     --1. what is this 2. this references a file specifically on your computer so this will only work for people named Peter with this folder in their documents
@@ -22,12 +22,13 @@ function Start ()
             myId = i
         end
     end
+    cvar_getf()
     SpawnPlayer(1)
 end
 
 
 
-function Update ()
+function Update()
 
     if (file == null) then
         return
