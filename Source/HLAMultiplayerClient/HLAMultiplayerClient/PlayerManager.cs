@@ -14,6 +14,12 @@ namespace HLAMultiplayerClient
         public string username;
         public bool isLocal;
 
+        public void Move (Vector3 newPos, Vector3 newAngles)
+        {
+            position = newPos;
+            angles = newAngles;
+        }
+
         public void Update ()
         {
             string[] playerInfo = {
@@ -27,6 +33,23 @@ namespace HLAMultiplayerClient
                 "}"
 
             };
+
+            foreach (string file in Directory.GetFiles(Program.tempPath))
+            {
+                if (file.Contains("GameInfo"))
+                {
+                    continue;
+                }
+
+                string[] path = file.Split((char) 92);
+                string fileName = path[path.Length - 1];
+                fileName = fileName.Split(".txt")[0];
+                int player = int.Parse(fileName);
+                if (player > GameManager.players.Count)
+                {
+                    File.Delete(file);
+                }
+            }
 
             Directory.CreateDirectory(Program.tempPath);
             File.WriteAllLines(Path.Combine(Program.tempPath, id.ToString() + ".txt"), playerInfo);

@@ -5,7 +5,8 @@ PlayerGoal = Entities:FindByName(nil,"pm_goal")
 
 --dont worry im gonna add more stuff to this function later
 function UpdateLocation(x,y,z)
-    SetOrigin(x,y,z)
+    pos = Vector(x,y,z)
+    thisEntity:SetOrigin(pos)
 end
 
 function getID(p_id)

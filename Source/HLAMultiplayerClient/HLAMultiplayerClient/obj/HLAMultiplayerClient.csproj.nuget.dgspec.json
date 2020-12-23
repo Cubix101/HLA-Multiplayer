@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\HLAMultiplayerClient.csproj": {}
+    "C:\\Users\\Peter\\Documents\\GitHub\\HLA-Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\HLAMultiplayerClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\HLAMultiplayerClient.csproj": {
+    "C:\\Users\\Peter\\Documents\\GitHub\\HLA-Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\HLAMultiplayerClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\HLAMultiplayerClient.csproj",
+        "projectUniqueName": "C:\\Users\\Peter\\Documents\\GitHub\\HLA-Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\HLAMultiplayerClient.csproj",
         "projectName": "HLAMultiplayerClient",
-        "projectPath": "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\HLAMultiplayerClient.csproj",
+        "projectPath": "C:\\Users\\Peter\\Documents\\GitHub\\HLA-Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\HLAMultiplayerClient.csproj",
         "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peter\\Documents\\Half-Life Alyx Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\obj\\",
+        "outputPath": "C:\\Users\\Peter\\Documents\\GitHub\\HLA-Multiplayer\\Source\\HLAMultiplayerClient\\HLAMultiplayerClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

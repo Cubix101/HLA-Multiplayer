@@ -6,11 +6,19 @@ using System.IO;
 
 namespace HLAMultiplayerClient
 {
+    public enum DataTypes
+    {
+        playerData
+    }
+
     class GameManager
     {
         public static GameManager instance;
 
         public static Dictionary<int, PlayerManager> players = new Dictionary<int, PlayerManager>();
+
+        public delegate void DataHandler(string[] args);
+        public static Dictionary<DataTypes, DataHandler> dataHandlers = new Dictionary<DataTypes, DataHandler>();
 
         public void Awake ()
         {
@@ -18,6 +26,20 @@ namespace HLAMultiplayerClient
             {
                 instance = this;
             }
+
+            dataHandlers = new Dictionary<DataTypes, DataHandler>()
+            {
+                { DataTypes.playerData, ManagePlayer }
+            };
+        }
+
+        public void ManagePlayer (string[] args)
+        {
+            int playerID = int.Parse(args[0]);
+            Vector3 pos = new Vector3(float.Parse(args[1]), float.Parse(args[2]), float.Parse(args[3]));
+            Vector3 angles = new Vector3(float.Parse(args[4]), float.Parse(args[5]), float.Parse(args[6]));
+
+            players[playerID].Move(pos, angles);
         }
 
         public void Update ()
@@ -41,14 +63,15 @@ namespace HLAMultiplayerClient
 
             try
             {
-                ManagePlayer();
-            } catch
+                ManageData();
+            }
+            catch (Exception ex)
             {
-                //idk
+                Console.WriteLine("Error handling server message: " + ex.Message);
             }
         }
 
-        void ManagePlayer ()
+        void ManageData ()
         {
             string consoleLog = "";
             using (FileStream stream = File.Open(Path.Combine(Program.hlaPath, "console.log"), FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
@@ -61,31 +84,19 @@ namespace HLAMultiplayerClient
 
             consoleLog = consoleLog.Split('\n')[consoleLog.Split('\n').Length - 2];
 
-            string idString = consoleLog.Split(new string[] { "Vector" }, StringSplitOptions.None)[0];
-            idString = idString.Split(' ')[idString.Split(' ').Length - 2];
+            if (consoleLog.ToLower().Contains("servermessage"))
+            {
+                consoleLog = consoleLog.Substring(consoleLog.IndexOf('s'), consoleLog.Length - consoleLog.IndexOf('s'));
 
-            string vectorString = consoleLog.Split(new string[] { "Vector" }, StringSplitOptions.None)[1];
-            vectorString = vectorString.Split('[')[1];
-            vectorString = vectorString.Split(']')[0];
+                int dataType = int.Parse(consoleLog.Split('[')[0].ToCharArray()[15].ToString());
 
-            string[] vectorComponents = vectorString.Split(' ');
-            float x = float.Parse(vectorComponents[0]);
-            float y = float.Parse(vectorComponents[1]);
-            float z = float.Parse(vectorComponents[2]);
+                consoleLog = consoleLog.Split('[')[1];
+                consoleLog = consoleLog.Split(']')[0];
 
-            players[int.Parse(idString)].position = new Vector3(x, y, z);
+                string[] args = consoleLog.Split(",");
 
-            string anglesString = consoleLog.Split(new string[] { "QAngles" }, StringSplitOptions.None)[1];
-            vectorString = vectorString.Split('[')[1];
-            vectorString = vectorString.Split(']')[0];
-
-            string[] angleComponents = vectorString.Split(' ');
-            x = float.Parse(angleComponents[0]);
-            y = float.Parse(angleComponents[1]);
-            z = float.Parse(angleComponents[2]);
-
-            Console.WriteLine(vectorString);
-            players[int.Parse(idString)].angles = new Vector3(x, y, z);
+                dataHandlers[(DataTypes)dataType](args);
+            }
         }
 
         public void SpawnPlayer (int _id, string _username, Vector3 position, Vector3 angles)

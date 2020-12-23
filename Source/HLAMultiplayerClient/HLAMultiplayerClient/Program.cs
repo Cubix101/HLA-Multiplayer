@@ -16,7 +16,7 @@ namespace HLAMultiplayerClient
         {
             Console.Title = "HLA Multiplayer Client";
             appPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            tempPath = Path.Combine(appPath, "temp-client");
+            tempPath = Path.Combine("C:", "temp-client");
             Console.WriteLine($"App is located at {appPath}, utilising temp-path {tempPath}");
 
             bool validInput = false;
