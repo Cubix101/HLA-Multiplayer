@@ -19,6 +19,11 @@ function Start ()
     end
 end
 
+--spawn a new player
+function SpawnPlayer
+    DoEntFire("p_spawn_relay","Trigger")
+end
+
 function Update ()
 
     if (file == null) then
@@ -56,3 +61,4 @@ function Update ()
         -- end
     end
 end
+
