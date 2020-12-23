@@ -3,10 +3,13 @@ local file
 local offScreenPos
 local localPlayer
 
+-- moist fellow here. bme is once again being cringe so i have taken it upon myself to try to add comments to this shit while trying to figure out how it works
+
 function Start ()
     offScreenPos = EntityGroup[1]:GetOrigin()
     localPlayer = Entities:GetLocalPlayer()
     file = LoadKeyValues("C:/Users/Peter/Documents/Half-Life Alyx Multiplayer/Build/Client/temp-client/GameInfo.txt")
+    -- this gives you an id (unique to your player)
     for i=1, file["playerCount"] do
         local playerData = LoadKeyValues("C:/Users/Peter/Documents/Half-Life Alyx Multiplayer/Build/Client/temp-client/"..tostring(i)..".txt")
         if (playerData["IsLocal"] == "True") then
@@ -21,7 +24,7 @@ function Update ()
     if (file == null) then
         return
     end
-    
+    -- prints the player location and rotation to the console
     print("Transform Update: "..tostring(myId).." "..tostring(localPlayer:GetOrigin()).." "..tostring(localPlayer:GetAngles()))
 
     -- for k,v in pairs(EntityGroup) do
