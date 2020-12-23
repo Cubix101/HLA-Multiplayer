@@ -5,6 +5,11 @@ local localPlayer
 
 -- moist fellow here. bme is once again being cringe so i have taken it upon myself to try to add comments to this shit while trying to figure out how it works
 
+--spawn a new player
+function SpawnPlayer(p_id)
+    DoEntFire("p_spawn_relay","Trigger",p_id)
+end
+
 function Start ()
     offScreenPos = EntityGroup[1]:GetOrigin()
     localPlayer = Entities:GetLocalPlayer()
@@ -17,12 +22,10 @@ function Start ()
             myId = i
         end
     end
+    SpawnPlayer(1)
 end
 
---spawn a new player
-function SpawnPlayer
-    DoEntFire("p_spawn_relay","Trigger")
-end
+
 
 function Update ()
 
