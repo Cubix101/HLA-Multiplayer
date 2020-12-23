@@ -8,9 +8,6 @@ function SpawnPlayer(p_id)
     EntFire("p_spawn_relay","Trigger")
 end
 
---update goal pos
-function UpdateGoalPos(p_id,x,y,z)
-
 end
 function Start ()
     offScreenPos = EntityGroup[1]:GetOrigin()
