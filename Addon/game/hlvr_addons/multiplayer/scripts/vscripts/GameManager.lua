@@ -5,7 +5,7 @@ local localPlayer
 
 --spawn a new player
 function SpawnPlayer(p_id)
-    EntFire("p_spawn_relay","Trigger")
+    EntFire("p_spawn_relay","Trigger",0)
 end
 
 end
