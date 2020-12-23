@@ -1,0 +1,55 @@
+local myId
+local file
+local offScreenPos
+local localPlayer
+
+function Start ()
+    offScreenPos = EntityGroup[1]:GetOrigin()
+    localPlayer = Entities:GetLocalPlayer()
+    file = LoadKeyValues("C:/Users/Peter/Documents/Half-Life Alyx Multiplayer/Build/Client/temp-client/GameInfo.txt")
+    for i=1, file["playerCount"] do
+        local playerData = LoadKeyValues("C:/Users/Peter/Documents/Half-Life Alyx Multiplayer/Build/Client/temp-client/"..tostring(i)..".txt")
+        if (playerData["IsLocal"] == "True") then
+            print("Found my id")
+            myId = i
+        end
+    end
+end
+
+function Update ()
+
+    if (file == null) then
+        return
+    end
+    
+    print("Transform Update: "..tostring(myId).." "..tostring(localPlayer:GetOrigin()).." "..tostring(localPlayer:GetAngles()))
+
+    -- for k,v in pairs(EntityGroup) do
+    --     if (k > file["playerCount"]) then
+    --         v:SetOrigin(offScreenPos)
+    --     end
+    -- end
+
+    for i=1, file["playerCount"] do
+        local playerData = LoadKeyValues("C:/Users/Peter/Documents/Half-Life Alyx Multiplayer/Build/Client/temp-client/"..tostring(i)..".txt")
+
+        if (playerData == null) then
+            print("Couldn't find player data for "..tostring(i))
+            return
+        end
+
+        -- if (playerData["IsLocal"] ~= "True") then
+            local posString = playerData["Position"]
+            posString = string.sub(posString, -posString:len(), -1)
+            local components = {}
+            for component in posString:gmatch("%w+") do table.insert(components, component) end
+            local x = tonumber(components[1])
+            local y = tonumber(components[2])
+            local z = tonumber(components[3])
+
+            pos = Vector(x, y, z)
+            EntityGroup[i]:SetOrigin(pos)
+            --EntityGroup[i]:SetAngles(playerData["angles"])
+        -- end
+    end
+end
