@@ -3,13 +3,15 @@ local file
 local offScreenPos
 local localPlayer
 
--- moist fellow here. bme is once again being cringe so i have taken it upon myself to try to add comments to this shit while trying to figure out how it works
-
 --spawn a new player
 function SpawnPlayer(p_id)
-    DoEntFire("p_spawn_relay","Trigger")
+    EntFire("p_spawn_relay","Trigger")
 end
 
+--update goal pos
+function UpdateGoalPos(p_id,x,y,z)
+
+end
 function Start ()
     offScreenPos = EntityGroup[1]:GetOrigin()
     localPlayer = Entities:GetLocalPlayer()
