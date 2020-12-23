@@ -1,7 +1,7 @@
 # Half-Life: Alyx Multiplayer
 
 ## How does it work?
-While Source 2 does have some limited networking capabilities, it's not nearly enough for full HLA multiplayer.
+While Source 2 does have some limited networking capabilities, Valve is cringe and won't let us get our grubby little grabbers on it.
 
 But I want HLA multiplayer.
 
