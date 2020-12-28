@@ -6,7 +6,7 @@ PlayerGoal = Entities:EntityGroup[0]
 --dont worry im gonna add more stuff to this function later
 function UpdateLocation(x,y,z)
     pos = Vector(x,y,z)
-    PlayerGoal:SetAbsOrigin(pos)
+    PlayerGoal:SetOrigin(x,y,z)
 end
 
 function getID(p_id)
