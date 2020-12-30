@@ -17,5 +17,5 @@ function OnSpawn()
     --update: this does not work. How to get username???
     --print(getStr(name[0]))
     print('player is ready')
-    UpdateLocation(50,50,0)
+    UpdateLocation(256,50,0)
 end
